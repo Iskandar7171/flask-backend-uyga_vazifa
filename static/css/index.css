@@ -1,0 +1,82 @@
+/* === Umumiy sahifa dizayni === */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Markaziy konteyner === */
+div {
+    background-color: #ffffff;
+    padding: 50px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 380px;
+}
+
+/* === Salom matni === */
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* === Logout tugmasi (havola ko‘rinishida) === */
+a {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+/* Hover effekti */
+a:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* === RESPONSIVE === */
+
+/* Planshet */
+@media (max-width: 768px) {
+    div {
+        width: 80%;
+        padding: 35px 40px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* Telefon */
+@media (max-width: 480px) {
+    div {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    a {
+        font-size: 13px;
+        padding: 9px 18px;
+    }
+}

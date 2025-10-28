@@ -1,0 +1,12 @@
+<h1>Login page</h1>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<div>
+    <form method="POST" action="{{ url_for('login') }}">
+        <input type="text" placeholder="username yozing" name="username">
+        <input type="password" placeholder="parol yozing" name="parol">
+        <button type="submit"> Kirish </button>
+    </form>
+    <a href="{{ url_for('register') }}"> Ro'yxatdan o'tish </a>
+</div>

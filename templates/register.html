@@ -1,0 +1,14 @@
+<h1>Register page</h1>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+
+</head>
+<div>
+    <form method="POST" action="{{ url_for('register') }}">
+        <input type="text" placeholder="Ism yozing" name="ism">
+        <input type="text" placeholder="username yozing" name="username">
+        <input type="password" placeholder="parol yozing" name="parol">
+        <button type="submit"> Ro'yxatdan o'tish </button>
+    </form>
+    <a href="{{ url_for('login') }}"> Agar accountingiz bo'lsa </a>
+</div>
